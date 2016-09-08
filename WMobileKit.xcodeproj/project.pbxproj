@@ -307,12 +307,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D53D0BA51CAB09020065D106 /* Build configuration list for PBXNativeTarget "WMobileKit" */;
 			buildPhases = (
-				53CF0FEC4C594C5B31C50188 /* 📦 Check Pods Manifest.lock */,
+				A3B7241D4F7527E9A2129D0A /* 📦 Check Pods Manifest.lock */,
+				53CF0FEC4C594C5B31C50188 /* [CP] Check Pods Manifest.lock */,
 				D53D0B8C1CAB09020065D106 /* Sources */,
 				D53D0B8D1CAB09020065D106 /* Frameworks */,
 				D53D0B8E1CAB09020065D106 /* Headers */,
 				D53D0B8F1CAB09020065D106 /* Resources */,
-				621E7AD3D77EC818304B0A88 /* 📦 Copy Pods Resources */,
+				621E7AD3D77EC818304B0A88 /* [CP] Copy Pods Resources */,
+				EAD131A981B6A1D9323A4F96 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,12 +329,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D53D0BA81CAB09020065D106 /* Build configuration list for PBXNativeTarget "WMobileKitTests" */;
 			buildPhases = (
-				8D143FF2525C2780A48EB1F2 /* 📦 Check Pods Manifest.lock */,
+				72B2966FDF15CB3B9E5D1F74 /* 📦 Check Pods Manifest.lock */,
+				8D143FF2525C2780A48EB1F2 /* [CP] Check Pods Manifest.lock */,
 				D53D0B971CAB09020065D106 /* Sources */,
 				D53D0B981CAB09020065D106 /* Frameworks */,
 				D53D0B991CAB09020065D106 /* Resources */,
-				43E652AB36073A13CD00196A /* 📦 Embed Pods Frameworks */,
-				C16C0F96346540270D9EC9E4 /* 📦 Copy Pods Resources */,
+				43E652AB36073A13CD00196A /* [CP] Embed Pods Frameworks */,
+				C16C0F96346540270D9EC9E4 /* [CP] Copy Pods Resources */,
+				D84C63D82C805EF8CC71DC52 /* 📦 Embed Pods Frameworks */,
+				67B5F2A2524324B40C37AF7D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,9 +360,11 @@
 				TargetAttributes = {
 					D53D0B901CAB09020065D106 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					D53D0B9A1CAB09020065D106 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -403,7 +410,127 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43E652AB36073A13CD00196A /* 📦 Embed Pods Frameworks */ = {
+		43E652AB36073A13CD00196A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMobileKitTests/Pods-WMobileKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53CF0FEC4C594C5B31C50188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		621E7AD3D77EC818304B0A88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMobileKit/Pods-WMobileKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67B5F2A2524324B40C37AF7D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMobileKitTests/Pods-WMobileKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B2966FDF15CB3B9E5D1F74 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D143FF2525C2780A48EB1F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B7241D4F7527E9A2129D0A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C16C0F96346540270D9EC9E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMobileKitTests/Pods-WMobileKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D84C63D82C805EF8CC71DC52 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,22 +545,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMobileKitTests/Pods-WMobileKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		53CF0FEC4C594C5B31C50188 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		621E7AD3D77EC818304B0A88 /* 📦 Copy Pods Resources */ = {
+		EAD131A981B6A1D9323A4F96 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,36 +558,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMobileKit/Pods-WMobileKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D143FF2525C2780A48EB1F2 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C16C0F96346540270D9EC9E4 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMobileKitTests/Pods-WMobileKitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -658,6 +740,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -677,6 +760,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -691,6 +775,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tests/WMobileKitTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -704,6 +789,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WMobileKit.WMobileKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tests/WMobileKitTests-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

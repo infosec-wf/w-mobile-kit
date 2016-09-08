@@ -145,15 +145,17 @@ public class WBaseActionSheet<ActionDataType>: UIViewController {
         presentingWindow?.hidden = true
 
         presentingWindow?.addSubview(tapRecognizerView)
+        
+        let animateOutSelector = #selector(animateOut as Void -> Void)
 
         if (tapRecognizerView.gestureRecognizers == nil) {
             // Do not use #selector here, causes issue with iPhone 4S
-            let darkViewRecognizer = UITapGestureRecognizer(target: self, action: Selector("animateOut"))
+            let darkViewRecognizer = UITapGestureRecognizer(target: self, action: animateOutSelector)
             tapRecognizerView.addGestureRecognizer(darkViewRecognizer)
         }
 
         // Do not use #selector here, causes issue with iPhone 4S
-        cancelButton.addTarget(self, action: Selector("animateOut"), forControlEvents: .TouchUpInside)
+        cancelButton.addTarget(self, action: animateOutSelector, forControlEvents: .TouchUpInside)
         cancelButton.tintColor = .lightGrayColor()
 
         presentingWindow?.addSubview(containerView)
@@ -284,7 +286,7 @@ public class WBaseActionSheet<ActionDataType>: UIViewController {
 
     // MARK: - Actions
     public func addAction(action: WAction<ActionDataType>) {
-        var actionCopy = action
+        let actionCopy = action
         actionCopy.index = actions.count
         actions.append(actionCopy)
 
